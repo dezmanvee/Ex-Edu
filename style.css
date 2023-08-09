@@ -321,13 +321,13 @@ CARDS AND SERVICES
 
 
  .card-img {
-    width: 100%;
+    /* width: 100%; */
+    overflow: hidden;
  }
 
  .card-img img {
-    max-width: 100%;
-    overflow: hidden;
-    height: auto;
+    width: 100%;
+    min-height: auto;
     display: block;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -364,13 +364,14 @@ CARDS AND SERVICES
 }
 .cards-ctn {
     width: 90vw;
+    max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    place-items: center;
+    margin: 0 auto;
     gap: 25px;
 }
 .card {
-    max-width: 90vw;
+    /* max-width: 90vw; */
     border-radius: 14px;
  }
 /* 
