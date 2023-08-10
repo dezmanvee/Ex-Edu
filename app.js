@@ -116,8 +116,8 @@ const cardBtns = document.querySelectorAll('.card-btn')
 
 // Filter Card Buttons
 cardBtns.forEach(cardBtn => {
-    cardBtn.addEventListener('click', (e) => {
-        const subject = e.currentTarget.dataset.subject
+    cardBtn.addEventListener('click', (ev) => {
+        const subject = ev.currentTarget.dataset.subject
         //filtering cards by subjects
         const filteredCards = data.filter(card => {
             if (card.subject === subject) {
