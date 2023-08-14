@@ -159,16 +159,37 @@ header {
     color:var(--clr-orange)
 }
 .pry-btn {
-    border: 4px double var(--clr-orange);
-    padding: 0.35rem 1rem;
+    /* border: 4px double var(--clr-orange); */
+    background: var(--clr-white);
+    padding: 0.75rem 1.5rem;
     text-transform: uppercase;
     font-weight: 450;
-    color: var(--baby-powder);
+    color: var(--dark-green);
+    position: relative;
+    z-index: 1;
+    transition: var(--transition)
+}
+.pry-btn::before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: var(--clr-orange);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition)
+}
+.pry-btn:hover::before,
+.pry-btn:focus::before{
+    transform: scaleX(1);   
 }
 
 .pry-btn:hover {
     cursor: pointer;
-    
+    color: var(--clr-white);
 }
 
 @media screen and (min-width: 800px) {
