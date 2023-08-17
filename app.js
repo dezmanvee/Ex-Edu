@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
     }
 
     //For the Scroll top button display
-    if (pageHeight > 1000) {
+    if (pageHeight > 500) {
         scrollBtnTop.classList.add('show-scroll-top')
     }
     else {
